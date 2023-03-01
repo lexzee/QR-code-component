@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { /* color: hsl(228, 45%, 44%); */ color:white; }
+.attribution a { color:white; }
 
 body{
   background-color: hsl(220, 15%, 55%);
@@ -13,7 +13,6 @@ body{
 }
 #container{
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   background: hsl(0, 0%, 100%);
@@ -22,25 +21,20 @@ body{
   padding: 4%;
   width: 300px;
 }
-#qr-cont {
-  /* flex-direction: column; */
-  display: flex;
+img{
+  display: block;
   background-color: hsl(218, 44%, 22%);
   margin: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
   margin-bottom: 3%;
-  border-radius: inherit;
+  border-radius: 1.5rem;
   align-items: center;
   justify-content: center;
 }
-#qr-cont img{
-  width: 100%;
-  height: auto;
-  position: ralative;
-  border-radius: inherit;
-}
 
 #txt-cont {
-  /* flex-direction: column; */
   text-align: center;
   padding: .4rem;
 }
@@ -62,13 +56,14 @@ p{
     flex-direction: row;
     width: auto;
   }
-  qr-cont{
-    margin: auto;
+  img{
+    margin: 0;
     padding: 0;
+    display: block;
   }
   
   #txt-cont{
     margin: 0 4%;
-    height: 100%;
+    height: auto;
   }
 }
